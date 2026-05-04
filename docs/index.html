@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Daily Stock AI Report</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      margin: 0;
+      background: #f7f7f8;
+      color: #111827;
+    }
+    header {
+      background: #111827;
+      color: white;
+      padding: 28px 20px;
+    }
+    main {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 24px 20px 48px;
+    }
+    .card {
+      background: white;
+      border-radius: 16px;
+      padding: 20px;
+      box-shadow: 0 8px 24px rgba(15, 23, 42, 0.08);
+      margin-bottom: 16px;
+    }
+    h1 {
+      margin: 0;
+      font-size: 28px;
+    }
+    h2 {
+      margin-top: 0;
+    }
+    a {
+      color: #2563eb;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    .muted {
+      color: #6b7280;
+      font-size: 14px;
+    }
+    .report-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    .report-list li {
+      padding: 12px 0;
+      border-bottom: 1px solid #e5e7eb;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Daily Stock AI Report</h1>
+    <p>미국 시장·섹터 ETF·탑 플레이어 일자별 자동 리포트</p>
+  </header>
+
+  <main>
+    <section class="card">
+      <h2>최근 리포트</h2>
+      <p class="muted">평일 장 마감 이후 자동 생성된 리포트가 날짜별로 누적됩니다.</p>
+      <ul id="reports" class="report-list"></ul>
+    </section>
+  </main>
+
+  <script>
+    async function loadReports() {
+      const list = document.getElementById("reports");
+
+      try {
+        const response = await fetch("./data/reports.json?t=" + Date.now());
+        const reports = await response.json();
+
+        if (!reports.length) {
+          list.innerHTML = "<li>아직 생성된 리포트가 없습니다.</li>";
+          return;
+        }
+
+        list.innerHTML = reports
+          .sort((a, b) => b.date.localeCompare(a.date))
+          .map(report => `
+            <li>
+              <a href="${report.path}">${report.date} 리포트 보기</a>
+              <div class="muted">${report.generated_at || ""}</div>
+            </li>
+          `)
+          .join("");
+      } catch (error) {
+        list.innerHTML = "<li>리포트 목록을 불러오지 못했습니다.</li>";
+      }
+    }
+
+    loadReports();
+  </script>
+</body>
+</html>
