@@ -11,7 +11,7 @@
     <div class="header-inner">
       <div class="eyebrow">AI Market Monitor</div>
       <h1 class="site-title">Daily Stock AI Report - 2026-05-04</h1>
-      <p class="subtitle">2026-05-04 13:26 KST · 미국 시장/섹터 ETF/탑 플레이어 자동 분석 리포트</p>
+      <p class="subtitle">2026-05-04 13:34 KST · 미국 시장/섹터 ETF/탑 플레이어 자동 분석 리포트</p>
     </div>
   </header>
 
@@ -26,15 +26,25 @@
     <div class="layout">
       <article class="report-article">
         <h1 id="daily-stock-ai-report">Daily Stock AI Report</h1>
-<p>기준 시각: 2026-05-04 13:26 KST</p>
+<p>기준 시각: 2026-05-04 13:33 KST</p>
 <p>본 리포트는 자동화된 기술적 지표 기반 요약이며, 투자 권유가 아닙니다.</p>
 <ul>
 <li>모델 버전: v2_calendar_horizon</li>
 <li>예측 저장: D7, D14, D30, M3, M6, Y1, Y5 기준 DB 저장</li>
 <li>평가 기준: 각 target_date 도래 후 실제 가격과 비교</li>
-<li>주말/휴장일은 추후 평가 스크립트에서 target_date 이후 첫 거래일 종가 기준으로 평가</li>
+<li>주말/휴장일은 평가 스크립트에서 target_date 이후 첫 거래일 종가 기준으로 평가</li>
+<li>점수 계산: model_weights 테이블의 최신 가중치 반영</li>
 </ul>
-<h2 id="_1">예측 모니터링 기준</h2>
+<h2 id="_1">현재 적용 중인 모델 가중치</h2>
+<ul>
+<li>이동평균 가중치: 1.00</li>
+<li>RSI 가중치: 1.00</li>
+<li>거래량 가중치: 1.00</li>
+<li>시장 가중치: 1.00</li>
+<li>뉴스 가중치: 0.00</li>
+</ul>
+<hr>
+<h2 id="_2">예측 모니터링 기준</h2>
 <ul>
 <li>D7: 7일 후 기준. ±1.0% 이내는 중립으로 평가</li>
 <li>D14: 14일 후 기준. ±1.5% 이내는 중립으로 평가</li>
@@ -45,8 +55,8 @@
 <li>Y5: 5년 후 기준. ±30.0% 이내는 중립으로 평가</li>
 </ul>
 <hr>
-<h2 id="_2">시장 요약</h2>
-<h3 id="_3">전일 대비 상승 상위</h3>
+<h2 id="_3">시장 요약</h2>
+<h3 id="_4">전일 대비 상승 상위</h3>
 <ul>
 <li>AAPL: 3.24% / 판단: 상승 우위</li>
 <li>LLY: 3.07% / 판단: 중립</li>
@@ -54,32 +64,32 @@
 <li>TSLA: 2.41% / 판단: 중립</li>
 <li>MSFT: 1.63% / 판단: 중립</li>
 </ul>
-<h3 id="_4">전일 대비 하락 상위</h3>
+<h3 id="_5">전일 대비 하락 상위</h3>
 <ul>
-<li>USO: -2.92% / 판단: 상승 우위</li>
+<li>USO: -2.92% / 판단: 중립</li>
 <li>XLE: -1.34% / 판단: 상승 우위</li>
 <li>ITA: -1.05% / 판단: 중립</li>
 <li>XOM: -1.02% / 판단: 중립</li>
 <li>XLI: -0.93% / 판단: 상승 우위</li>
 </ul>
-<h3 id="_5">기술적 점수 상위</h3>
+<h3 id="_6">기술적 점수 상위</h3>
 <ul>
-<li>XLC: 점수 4 / RSI 58.3 / 판단: 상승 우위 / 예측: 상승 / 신뢰도 75%</li>
-<li>XLY: 점수 4 / RSI 65.9 / 판단: 상승 우위 / 예측: 상승 / 신뢰도 75%</li>
-<li>AAPL: 점수 4 / RSI 69.3 / 판단: 상승 우위 / 예측: 상승 / 신뢰도 75%</li>
-<li>DIA: 점수 3 / RSI 68.2 / 판단: 상승 우위 / 예측: 상승 / 신뢰도 65%</li>
-<li>XLE: 점수 3 / RSI 59.1 / 판단: 상승 우위 / 예측: 상승 / 신뢰도 65%</li>
+<li>XLC: 점수 4.0 / RSI 58.3 / 판단: 상승 우위 / 예측: 상승 / 신뢰도 75%</li>
+<li>XLY: 점수 4.0 / RSI 65.9 / 판단: 상승 우위 / 예측: 상승 / 신뢰도 75%</li>
+<li>AAPL: 점수 4.0 / RSI 69.3 / 판단: 상승 우위 / 예측: 상승 / 신뢰도 75%</li>
+<li>DIA: 점수 3.0 / RSI 68.2 / 판단: 상승 우위 / 예측: 상승 / 신뢰도 65%</li>
+<li>XLE: 점수 3.0 / RSI 59.1 / 판단: 상승 우위 / 예측: 상승 / 신뢰도 65%</li>
 </ul>
-<h3 id="_6">기술적 점수 하위</h3>
+<h3 id="_7">기술적 점수 하위</h3>
 <ul>
-<li>XLV: 점수 -3 / RSI 41.7 / 판단: 하락 우위 / 예측: 하락 / 신뢰도 65%</li>
-<li>IBB: 점수 -3 / RSI 40.1 / 판단: 하락 우위 / 예측: 하락 / 신뢰도 65%</li>
-<li>TLT: 점수 -3 / RSI 41.4 / 판단: 하락 우위 / 예측: 하락 / 신뢰도 65%</li>
-<li>IEF: 점수 -3 / RSI 43.3 / 판단: 하락 우위 / 예측: 하락 / 신뢰도 65%</li>
-<li>GLD: 점수 -3 / RSI 41.5 / 판단: 하락 우위 / 예측: 하락 / 신뢰도 65%</li>
+<li>XLV: 점수 -3.0 / RSI 41.7 / 판단: 하락 우위 / 예측: 하락 / 신뢰도 65%</li>
+<li>IBB: 점수 -3.0 / RSI 40.1 / 판단: 하락 우위 / 예측: 하락 / 신뢰도 65%</li>
+<li>TLT: 점수 -3.0 / RSI 41.4 / 판단: 하락 우위 / 예측: 하락 / 신뢰도 65%</li>
+<li>IEF: 점수 -3.0 / RSI 43.3 / 판단: 하락 우위 / 예측: 하락 / 신뢰도 65%</li>
+<li>GLD: 점수 -3.0 / RSI 41.5 / 판단: 하락 우위 / 예측: 하락 / 신뢰도 65%</li>
 </ul>
 <hr>
-<h2 id="_7">종목별 상세</h2>
+<h2 id="_8">종목별 상세</h2>
 <h2 id="spy">SPY</h2>
 <ul>
 <li>종가: 720.65</li>
@@ -90,7 +100,10 @@
 <li>RSI: 79.1</li>
 <li>거래량 상태: 평균 수준 (0.80배)</li>
 <li>모멘텀 상태: 과열 가능성</li>
-<li>기술적 점수: 2</li>
+<li>이동평균 원점수: 3</li>
+<li>RSI 원점수: -1</li>
+<li>거래량 원점수: 0</li>
+<li>가중치 반영 점수: 2.0</li>
 <li>1차 판단: <strong>중립</strong></li>
 <li>예측 방향: <strong>중립</strong></li>
 <li>예측 신뢰도: <strong>55%</strong></li>
@@ -106,7 +119,10 @@
 <li>RSI: 82.8</li>
 <li>거래량 상태: 평균 수준 (0.94배)</li>
 <li>모멘텀 상태: 과열 가능성</li>
-<li>기술적 점수: 2</li>
+<li>이동평균 원점수: 3</li>
+<li>RSI 원점수: -1</li>
+<li>거래량 원점수: 0</li>
+<li>가중치 반영 점수: 2.0</li>
 <li>1차 판단: <strong>중립</strong></li>
 <li>예측 방향: <strong>중립</strong></li>
 <li>예측 신뢰도: <strong>55%</strong></li>
@@ -122,7 +138,10 @@
 <li>RSI: 72.3</li>
 <li>거래량 상태: 평균 수준 (1.02배)</li>
 <li>모멘텀 상태: 과열 가능성</li>
-<li>기술적 점수: 2</li>
+<li>이동평균 원점수: 3</li>
+<li>RSI 원점수: -1</li>
+<li>거래량 원점수: 0</li>
+<li>가중치 반영 점수: 2.0</li>
 <li>1차 판단: <strong>중립</strong></li>
 <li>예측 방향: <strong>중립</strong></li>
 <li>예측 신뢰도: <strong>55%</strong></li>
@@ -138,7 +157,10 @@
 <li>RSI: 68.2</li>
 <li>거래량 상태: 평균 수준 (1.04배)</li>
 <li>모멘텀 상태: 중립</li>
-<li>기술적 점수: 3</li>
+<li>이동평균 원점수: 3</li>
+<li>RSI 원점수: 0</li>
+<li>거래량 원점수: 0</li>
+<li>가중치 반영 점수: 3.0</li>
 <li>1차 판단: <strong>상승 우위</strong></li>
 <li>예측 방향: <strong>상승</strong></li>
 <li>예측 신뢰도: <strong>65%</strong></li>
@@ -154,7 +176,10 @@
 <li>RSI: 78.2</li>
 <li>거래량 상태: 평균 수준 (1.06배)</li>
 <li>모멘텀 상태: 과열 가능성</li>
-<li>기술적 점수: 2</li>
+<li>이동평균 원점수: 3</li>
+<li>RSI 원점수: -1</li>
+<li>거래량 원점수: 0</li>
+<li>가중치 반영 점수: 2.0</li>
 <li>1차 판단: <strong>중립</strong></li>
 <li>예측 방향: <strong>중립</strong></li>
 <li>예측 신뢰도: <strong>55%</strong></li>
@@ -170,7 +195,10 @@
 <li>RSI: 81.0</li>
 <li>거래량 상태: 평균 수준 (0.99배)</li>
 <li>모멘텀 상태: 과열 가능성</li>
-<li>기술적 점수: 2</li>
+<li>이동평균 원점수: 3</li>
+<li>RSI 원점수: -1</li>
+<li>거래량 원점수: 0</li>
+<li>가중치 반영 점수: 2.0</li>
 <li>1차 판단: <strong>중립</strong></li>
 <li>예측 방향: <strong>중립</strong></li>
 <li>예측 신뢰도: <strong>55%</strong></li>
@@ -186,7 +214,10 @@
 <li>RSI: 58.3</li>
 <li>거래량 상태: 거래량 증가 (1.75배)</li>
 <li>모멘텀 상태: 중립</li>
-<li>기술적 점수: 4</li>
+<li>이동평균 원점수: 3</li>
+<li>RSI 원점수: 0</li>
+<li>거래량 원점수: 1</li>
+<li>가중치 반영 점수: 4.0</li>
 <li>1차 판단: <strong>상승 우위</strong></li>
 <li>예측 방향: <strong>상승</strong></li>
 <li>예측 신뢰도: <strong>75%</strong></li>
@@ -202,7 +233,10 @@
 <li>RSI: 65.9</li>
 <li>거래량 상태: 거래량 증가 (1.67배)</li>
 <li>모멘텀 상태: 중립</li>
-<li>기술적 점수: 4</li>
+<li>이동평균 원점수: 3</li>
+<li>RSI 원점수: 0</li>
+<li>거래량 원점수: 1</li>
+<li>가중치 반영 점수: 4.0</li>
 <li>1차 판단: <strong>상승 우위</strong></li>
 <li>예측 방향: <strong>상승</strong></li>
 <li>예측 신뢰도: <strong>75%</strong></li>
@@ -218,7 +252,10 @@
 <li>RSI: 67.0</li>
 <li>거래량 상태: 평균 수준 (1.16배)</li>
 <li>모멘텀 상태: 중립</li>
-<li>기술적 점수: 1</li>
+<li>이동평균 원점수: 1</li>
+<li>RSI 원점수: 0</li>
+<li>거래량 원점수: 0</li>
+<li>가중치 반영 점수: 1.0</li>
 <li>1차 판단: <strong>중립</strong></li>
 <li>예측 방향: <strong>중립</strong></li>
 <li>예측 신뢰도: <strong>50%</strong></li>
@@ -234,7 +271,10 @@
 <li>RSI: 41.7</li>
 <li>거래량 상태: 평균 수준 (1.08배)</li>
 <li>모멘텀 상태: 중립</li>
-<li>기술적 점수: -3</li>
+<li>이동평균 원점수: -3</li>
+<li>RSI 원점수: 0</li>
+<li>거래량 원점수: 0</li>
+<li>가중치 반영 점수: -3.0</li>
 <li>1차 판단: <strong>하락 우위</strong></li>
 <li>예측 방향: <strong>하락</strong></li>
 <li>예측 신뢰도: <strong>65%</strong></li>
@@ -250,7 +290,10 @@
 <li>RSI: 53.8</li>
 <li>거래량 상태: 평균 수준 (1.21배)</li>
 <li>모멘텀 상태: 중립</li>
-<li>기술적 점수: 1</li>
+<li>이동평균 원점수: 1</li>
+<li>RSI 원점수: 0</li>
+<li>거래량 원점수: 0</li>
+<li>가중치 반영 점수: 1.0</li>
 <li>1차 판단: <strong>중립</strong></li>
 <li>예측 방향: <strong>중립</strong></li>
 <li>예측 신뢰도: <strong>50%</strong></li>
@@ -266,7 +309,10 @@
 <li>RSI: 59.1</li>
 <li>거래량 상태: 평균 수준 (0.81배)</li>
 <li>모멘텀 상태: 중립</li>
-<li>기술적 점수: 3</li>
+<li>이동평균 원점수: 3</li>
+<li>RSI 원점수: 0</li>
+<li>거래량 원점수: 0</li>
+<li>가중치 반영 점수: 3.0</li>
 <li>1차 판단: <strong>상승 우위</strong></li>
 <li>예측 방향: <strong>상승</strong></li>
 <li>예측 신뢰도: <strong>65%</strong></li>
@@ -282,7 +328,10 @@
 <li>RSI: 50.5</li>
 <li>거래량 상태: 평균 수준 (0.76배)</li>
 <li>모멘텀 상태: 중립</li>
-<li>기술적 점수: 3</li>
+<li>이동평균 원점수: 3</li>
+<li>RSI 원점수: 0</li>
+<li>거래량 원점수: 0</li>
+<li>가중치 반영 점수: 3.0</li>
 <li>1차 판단: <strong>상승 우위</strong></li>
 <li>예측 방향: <strong>상승</strong></li>
 <li>예측 신뢰도: <strong>65%</strong></li>
@@ -298,7 +347,10 @@
 <li>RSI: 39.2</li>
 <li>거래량 상태: 평균 수준 (0.90배)</li>
 <li>모멘텀 상태: 중립</li>
-<li>기술적 점수: 1</li>
+<li>이동평균 원점수: 1</li>
+<li>RSI 원점수: 0</li>
+<li>거래량 원점수: 0</li>
+<li>가중치 반영 점수: 1.0</li>
 <li>1차 판단: <strong>중립</strong></li>
 <li>예측 방향: <strong>중립</strong></li>
 <li>예측 신뢰도: <strong>50%</strong></li>
@@ -314,7 +366,10 @@
 <li>RSI: 51.4</li>
 <li>거래량 상태: 평균 수준 (0.82배)</li>
 <li>모멘텀 상태: 중립</li>
-<li>기술적 점수: 3</li>
+<li>이동평균 원점수: 3</li>
+<li>RSI 원점수: 0</li>
+<li>거래량 원점수: 0</li>
+<li>가중치 반영 점수: 3.0</li>
 <li>1차 판단: <strong>상승 우위</strong></li>
 <li>예측 방향: <strong>상승</strong></li>
 <li>예측 신뢰도: <strong>65%</strong></li>
@@ -330,7 +385,10 @@
 <li>RSI: 62.2</li>
 <li>거래량 상태: 평균 수준 (1.41배)</li>
 <li>모멘텀 상태: 중립</li>
-<li>기술적 점수: 3</li>
+<li>이동평균 원점수: 3</li>
+<li>RSI 원점수: 0</li>
+<li>거래량 원점수: 0</li>
+<li>가중치 반영 점수: 3.0</li>
 <li>1차 판단: <strong>상승 우위</strong></li>
 <li>예측 방향: <strong>상승</strong></li>
 <li>예측 신뢰도: <strong>65%</strong></li>
@@ -346,10 +404,13 @@
 <li>RSI: 84.1</li>
 <li>거래량 상태: 거래량 감소 (0.68배)</li>
 <li>모멘텀 상태: 과열 가능성</li>
-<li>기술적 점수: 2</li>
+<li>이동평균 원점수: 3</li>
+<li>RSI 원점수: -1</li>
+<li>거래량 원점수: -0.5</li>
+<li>가중치 반영 점수: 1.5</li>
 <li>1차 판단: <strong>중립</strong></li>
 <li>예측 방향: <strong>중립</strong></li>
-<li>예측 신뢰도: <strong>55%</strong></li>
+<li>예측 신뢰도: <strong>50%</strong></li>
 <li>모니터링 구간: D7(7일 후), D14(14일 후), D30(30일 후), M3(3개월 후), M6(6개월 후), Y1(1년 후), Y5(5년 후)</li>
 </ul>
 <h2 id="ibb">IBB</h2>
@@ -362,7 +423,10 @@
 <li>RSI: 40.1</li>
 <li>거래량 상태: 평균 수준 (0.91배)</li>
 <li>모멘텀 상태: 중립</li>
-<li>기술적 점수: -3</li>
+<li>이동평균 원점수: -3</li>
+<li>RSI 원점수: 0</li>
+<li>거래량 원점수: 0</li>
+<li>가중치 반영 점수: -3.0</li>
 <li>1차 판단: <strong>하락 우위</strong></li>
 <li>예측 방향: <strong>하락</strong></li>
 <li>예측 신뢰도: <strong>65%</strong></li>
@@ -378,7 +442,10 @@
 <li>RSI: 52.3</li>
 <li>거래량 상태: 평균 수준 (0.71배)</li>
 <li>모멘텀 상태: 중립</li>
-<li>기술적 점수: 3</li>
+<li>이동평균 원점수: 3</li>
+<li>RSI 원점수: 0</li>
+<li>거래량 원점수: 0</li>
+<li>가중치 반영 점수: 3.0</li>
 <li>1차 판단: <strong>상승 우위</strong></li>
 <li>예측 방향: <strong>상승</strong></li>
 <li>예측 신뢰도: <strong>65%</strong></li>
@@ -394,7 +461,10 @@
 <li>RSI: 28.9</li>
 <li>거래량 상태: 평균 수준 (1.12배)</li>
 <li>모멘텀 상태: 과매도 가능성</li>
-<li>기술적 점수: -2</li>
+<li>이동평균 원점수: -3</li>
+<li>RSI 원점수: 1</li>
+<li>거래량 원점수: 0</li>
+<li>가중치 반영 점수: -2.0</li>
 <li>1차 판단: <strong>중립</strong></li>
 <li>예측 방향: <strong>중립</strong></li>
 <li>예측 신뢰도: <strong>55%</strong></li>
@@ -410,7 +480,10 @@
 <li>RSI: 41.4</li>
 <li>거래량 상태: 평균 수준 (1.09배)</li>
 <li>모멘텀 상태: 중립</li>
-<li>기술적 점수: -3</li>
+<li>이동평균 원점수: -3</li>
+<li>RSI 원점수: 0</li>
+<li>거래량 원점수: 0</li>
+<li>가중치 반영 점수: -3.0</li>
 <li>1차 판단: <strong>하락 우위</strong></li>
 <li>예측 방향: <strong>하락</strong></li>
 <li>예측 신뢰도: <strong>65%</strong></li>
@@ -426,7 +499,10 @@
 <li>RSI: 43.3</li>
 <li>거래량 상태: 평균 수준 (0.85배)</li>
 <li>모멘텀 상태: 중립</li>
-<li>기술적 점수: -3</li>
+<li>이동평균 원점수: -3</li>
+<li>RSI 원점수: 0</li>
+<li>거래량 원점수: 0</li>
+<li>가중치 반영 점수: -3.0</li>
 <li>1차 판단: <strong>하락 우위</strong></li>
 <li>예측 방향: <strong>하락</strong></li>
 <li>예측 신뢰도: <strong>65%</strong></li>
@@ -442,7 +518,10 @@
 <li>RSI: 51.3</li>
 <li>거래량 상태: 평균 수준 (0.81배)</li>
 <li>모멘텀 상태: 중립</li>
-<li>기술적 점수: 3</li>
+<li>이동평균 원점수: 3</li>
+<li>RSI 원점수: 0</li>
+<li>거래량 원점수: 0</li>
+<li>가중치 반영 점수: 3.0</li>
 <li>1차 판단: <strong>상승 우위</strong></li>
 <li>예측 방향: <strong>상승</strong></li>
 <li>예측 신뢰도: <strong>65%</strong></li>
@@ -458,7 +537,10 @@
 <li>RSI: 41.5</li>
 <li>거래량 상태: 평균 수준 (0.86배)</li>
 <li>모멘텀 상태: 중립</li>
-<li>기술적 점수: -3</li>
+<li>이동평균 원점수: -3</li>
+<li>RSI 원점수: 0</li>
+<li>거래량 원점수: 0</li>
+<li>가중치 반영 점수: -3.0</li>
 <li>1차 판단: <strong>하락 우위</strong></li>
 <li>예측 방향: <strong>하락</strong></li>
 <li>예측 신뢰도: <strong>65%</strong></li>
@@ -474,7 +556,10 @@
 <li>RSI: 50.0</li>
 <li>거래량 상태: 평균 수준 (0.87배)</li>
 <li>모멘텀 상태: 중립</li>
-<li>기술적 점수: -1</li>
+<li>이동평균 원점수: -1</li>
+<li>RSI 원점수: 0</li>
+<li>거래량 원점수: 0</li>
+<li>가중치 반영 점수: -1.0</li>
 <li>1차 판단: <strong>중립</strong></li>
 <li>예측 방향: <strong>중립</strong></li>
 <li>예측 신뢰도: <strong>50%</strong></li>
@@ -490,10 +575,13 @@
 <li>RSI: 60.9</li>
 <li>거래량 상태: 거래량 감소 (0.58배)</li>
 <li>모멘텀 상태: 중립</li>
-<li>기술적 점수: 3</li>
-<li>1차 판단: <strong>상승 우위</strong></li>
-<li>예측 방향: <strong>상승</strong></li>
-<li>예측 신뢰도: <strong>65%</strong></li>
+<li>이동평균 원점수: 3</li>
+<li>RSI 원점수: 0</li>
+<li>거래량 원점수: -0.5</li>
+<li>가중치 반영 점수: 2.5</li>
+<li>1차 판단: <strong>중립</strong></li>
+<li>예측 방향: <strong>중립</strong></li>
+<li>예측 신뢰도: <strong>55%</strong></li>
 <li>모니터링 구간: D7(7일 후), D14(14일 후), D30(30일 후), M3(3개월 후), M6(6개월 후), Y1(1년 후), Y5(5년 후)</li>
 </ul>
 <h2 id="uup">UUP</h2>
@@ -506,7 +594,10 @@
 <li>RSI: 51.5</li>
 <li>거래량 상태: 평균 수준 (0.97배)</li>
 <li>모멘텀 상태: 중립</li>
-<li>기술적 점수: -1</li>
+<li>이동평균 원점수: -1</li>
+<li>RSI 원점수: 0</li>
+<li>거래량 원점수: 0</li>
+<li>가중치 반영 점수: -1.0</li>
 <li>1차 판단: <strong>중립</strong></li>
 <li>예측 방향: <strong>중립</strong></li>
 <li>예측 신뢰도: <strong>50%</strong></li>
@@ -522,7 +613,10 @@
 <li>RSI: 69.3</li>
 <li>거래량 상태: 거래량 증가 (1.74배)</li>
 <li>모멘텀 상태: 중립</li>
-<li>기술적 점수: 4</li>
+<li>이동평균 원점수: 3</li>
+<li>RSI 원점수: 0</li>
+<li>거래량 원점수: 1</li>
+<li>가중치 반영 점수: 4.0</li>
 <li>1차 판단: <strong>상승 우위</strong></li>
 <li>예측 방향: <strong>상승</strong></li>
 <li>예측 신뢰도: <strong>75%</strong></li>
@@ -538,7 +632,10 @@
 <li>RSI: 62.9</li>
 <li>거래량 상태: 평균 수준 (0.90배)</li>
 <li>모멘텀 상태: 중립</li>
-<li>기술적 점수: 1</li>
+<li>이동평균 원점수: 1</li>
+<li>RSI 원점수: 0</li>
+<li>거래량 원점수: 0</li>
+<li>가중치 반영 점수: 1.0</li>
 <li>1차 판단: <strong>중립</strong></li>
 <li>예측 방향: <strong>중립</strong></li>
 <li>예측 신뢰도: <strong>50%</strong></li>
@@ -554,7 +651,10 @@
 <li>RSI: 58.1</li>
 <li>거래량 상태: 평균 수준 (0.87배)</li>
 <li>모멘텀 상태: 중립</li>
-<li>기술적 점수: 3</li>
+<li>이동평균 원점수: 3</li>
+<li>RSI 원점수: 0</li>
+<li>거래량 원점수: 0</li>
+<li>가중치 반영 점수: 3.0</li>
 <li>1차 판단: <strong>상승 우위</strong></li>
 <li>예측 방향: <strong>상승</strong></li>
 <li>예측 신뢰도: <strong>65%</strong></li>
@@ -570,7 +670,10 @@
 <li>RSI: 82.9</li>
 <li>거래량 상태: 평균 수준 (1.01배)</li>
 <li>모멘텀 상태: 과열 가능성</li>
-<li>기술적 점수: 2</li>
+<li>이동평균 원점수: 3</li>
+<li>RSI 원점수: -1</li>
+<li>거래량 원점수: 0</li>
+<li>가중치 반영 점수: 2.0</li>
 <li>1차 판단: <strong>중립</strong></li>
 <li>예측 방향: <strong>중립</strong></li>
 <li>예측 신뢰도: <strong>55%</strong></li>
@@ -586,7 +689,10 @@
 <li>RSI: 86.9</li>
 <li>거래량 상태: 평균 수준 (1.12배)</li>
 <li>모멘텀 상태: 과열 가능성</li>
-<li>기술적 점수: 2</li>
+<li>이동평균 원점수: 3</li>
+<li>RSI 원점수: -1</li>
+<li>거래량 원점수: 0</li>
+<li>가중치 반영 점수: 2.0</li>
 <li>1차 판단: <strong>중립</strong></li>
 <li>예측 방향: <strong>중립</strong></li>
 <li>예측 신뢰도: <strong>55%</strong></li>
@@ -602,7 +708,10 @@
 <li>RSI: 43.0</li>
 <li>거래량 상태: 평균 수준 (1.32배)</li>
 <li>모멘텀 상태: 중립</li>
-<li>기술적 점수: -3</li>
+<li>이동평균 원점수: -3</li>
+<li>RSI 원점수: 0</li>
+<li>거래량 원점수: 0</li>
+<li>가중치 반영 점수: -3.0</li>
 <li>1차 판단: <strong>하락 우위</strong></li>
 <li>예측 방향: <strong>하락</strong></li>
 <li>예측 신뢰도: <strong>65%</strong></li>
@@ -618,7 +727,10 @@
 <li>RSI: 67.1</li>
 <li>거래량 상태: 평균 수준 (0.97배)</li>
 <li>모멘텀 상태: 중립</li>
-<li>기술적 점수: 1</li>
+<li>이동평균 원점수: 1</li>
+<li>RSI 원점수: 0</li>
+<li>거래량 원점수: 0</li>
+<li>가중치 반영 점수: 1.0</li>
 <li>1차 판단: <strong>중립</strong></li>
 <li>예측 방향: <strong>중립</strong></li>
 <li>예측 신뢰도: <strong>50%</strong></li>
@@ -634,7 +746,10 @@
 <li>RSI: 48.4</li>
 <li>거래량 상태: 평균 수준 (0.76배)</li>
 <li>모멘텀 상태: 중립</li>
-<li>기술적 점수: 3</li>
+<li>이동평균 원점수: 3</li>
+<li>RSI 원점수: 0</li>
+<li>거래량 원점수: 0</li>
+<li>가중치 반영 점수: 3.0</li>
 <li>1차 판단: <strong>상승 우위</strong></li>
 <li>예측 방향: <strong>상승</strong></li>
 <li>예측 신뢰도: <strong>65%</strong></li>
@@ -650,7 +765,10 @@
 <li>RSI: 50.2</li>
 <li>거래량 상태: 평균 수준 (0.83배)</li>
 <li>모멘텀 상태: 중립</li>
-<li>기술적 점수: 1</li>
+<li>이동평균 원점수: 1</li>
+<li>RSI 원점수: 0</li>
+<li>거래량 원점수: 0</li>
+<li>가중치 반영 점수: 1.0</li>
 <li>1차 판단: <strong>중립</strong></li>
 <li>예측 방향: <strong>중립</strong></li>
 <li>예측 신뢰도: <strong>50%</strong></li>
@@ -666,7 +784,10 @@
 <li>RSI: 55.9</li>
 <li>거래량 상태: 평균 수준 (1.39배)</li>
 <li>모멘텀 상태: 중립</li>
-<li>기술적 점수: 1</li>
+<li>이동평균 원점수: 1</li>
+<li>RSI 원점수: 0</li>
+<li>거래량 원점수: 0</li>
+<li>가중치 반영 점수: 1.0</li>
 <li>1차 판단: <strong>중립</strong></li>
 <li>예측 방향: <strong>중립</strong></li>
 <li>예측 신뢰도: <strong>50%</strong></li>
@@ -679,6 +800,7 @@
         <ul class="toc">
           <li><a href="#daily-stock-ai-report">개요</a></li>
           <li><a href="#예측-모니터링-기준">예측 기준</a></li>
+          <li><a href="#현재-적용-중인-모델-가중치">모델 가중치</a></li>
           <li><a href="#시장-요약">시장 요약</a></li>
           <li><a href="#종목별-상세">종목별 상세</a></li>
         </ul>
